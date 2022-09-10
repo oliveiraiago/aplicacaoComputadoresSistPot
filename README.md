@@ -1,5 +1,5 @@
 # Aplicação de Computadores em Sistemas de Potência(EEE582)
-Repositório para guardar os códigos criados durante o curso Aplicação de Computadores em Sistemas de Potência ministrado na UFRJ, no curso de Engenharia Elétrica.
+Repositório para guardar os códigos criados durante o curso Aplicação de Computadores em Sistemas de Potência ministrado na UFRJ no curso de Engenharia Elétrica.
 ## Ementa do curso:
 ### Soluções Diretas de Sistemas Lineares
 - Eliminação de Gauss

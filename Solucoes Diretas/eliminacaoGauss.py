@@ -15,14 +15,14 @@ class EliminacaoGauss:
         self.x = [0] * self.nLinhasb
 
         if self.nLinhasA == self.nColA:
-            matrizA_equivalente, vetorb_equivalente = self.eliminacao()
-            resultado = self.substituicao(matrizA_equivalente, vetorb_equivalente)
+            matrizA_equivalente, vetorb_equivalente = self._eliminacao()
+            resultado = self._substituicao(matrizA_equivalente, vetorb_equivalente)
             print(resultado)
         else:
             print("A matriz A não é quadrada. As operações não podem ser realizadas.")
 
     # Função para resolver o sistema triangular superior, ou seja, a parte final do algoritmo
-    def substituicao(self, matriz_triangular_superior, matrizb):
+    def _substituicao(self, matriz_triangular_superior, matrizb):
         x = self.x
         n = self.nLinhasb
         matrizA = matriz_triangular_superior
@@ -38,7 +38,7 @@ class EliminacaoGauss:
         return x
 
     # Resolve a parte da eliminação dos elementos abaixo do pivo
-    def eliminacao(self):
+    def _eliminacao(self):
         n = self.nLinhasb
         matrizA = self.matrizA
         vetorb = self.matrizb

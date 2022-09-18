@@ -1,3 +1,6 @@
+from dados import A, b
+
+
 class EliminacaoGauss:
 
     def __init__(self, matrizA, matrizb):
@@ -57,8 +60,4 @@ class EliminacaoGauss:
         return matrizA, vetorb
 
 
-A = [[4, -9, 2],
-     [2, -4, 4],
-     [-1, 2, 2]]
-b = [2, 3, 1]
 objeto = EliminacaoGauss(A, b)
